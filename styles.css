@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image:url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    color: white;
+    background-position-y: +300px;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    justify-content: center;
+    margin: 200px auto;
+    display: flex;
+}
+
+.fylo {
+background-color: hsl(228, 56%, 26%);
+width: 180px;
+height: 80px;
+border-radius: 5px 50px 5px 5px;
+padding: 40px;
+}
+
+.logo{
+    width: 60%;
+    margin:10px  auto;
+}
+
+.svg {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+.info {
+    width: 400px;
+    height: 90px;
+    margin: 30px 20px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.space-left {
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 47px;
+    color: hsl(228, 56%, 26%);
+    border-radius: 4px;
+    font-size: 0.6rem;
+    right: 350px;
+}
+
+.space-left h2 {
+    padding: 2px;
+}
+
+.arrow {
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 9px solid transparent;
+    border-top: 20px solid #fff;
+    border-right: 8px solid transparent;
+    left: 84px;
+    top: -35px;
+}
+
+.border {
+    height: 10px;
+    width: 385px;
+    padding: 2px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.status {
+    height: 5px;
+    width: 325px;
+    background: linear-gradient(hsl(6, 100%, 80%, 20), hsl(335, 100%, 65%));
+    border-radius: 20px;
+    margin: 2px 0;
+}
+
+#stop {
+    position: absolute;
+    left: 885px;
+    top: 298px
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 390px; */
+}
+
+@media (max-width: 1200px) {
+    body{
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position-y: 50px;
+        background-position-x: 63px;
+    }
+
+    main {
+        display: grid;
+        /* justify-content: center; */
+    }
+
+    .fylo {
+        margin: auto;
+        width: 260px;
+    }
+
+    .info {
+        width: 300px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .space-left {
+        position: absolute;
+        top: 500px;
+        right: 200px;
+    }
+
+    #stop {
+        display: none;
+    }
+
+    .border {
+        width: 280px
+    }
+
+    .status {
+        width: 260px;
+    }
+
+    .amount {
+        width: 280px
+    }
+}
